@@ -1,0 +1,148 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+body {
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;	
+	background: #EBF8F7;
+}
+
+.titleBar {
+	position: relative;
+	height: 45px;
+	background: url(../img/bg_title.png) repeat-x 0 bottom;
+	background-size: 10px 45px;
+	a {
+		position: absolute;
+		left: 0;
+		width: 45px;
+		height: 45px;
+		background: url(../img/ic_backup.png) no-repeat center;
+		background-size: 21px 21px;
+	}
+	h1 {
+		font-size: 18px;
+		color: #FFF;
+		text-align: center;
+		line-height: 45px;
+	}
+}
+
+main {
+	padding-top: 12px;
+}
+
+.content {	
+	margin: 0 12px 12px;
+	background: #FFF;
+	@include border-radius(4px);	
+}
+.mainContent {
+	position: relative;
+}
+.contentImg {
+	overflow:hidden;	
+	img {
+		width: 100%;
+		@include border-top-radius(4px);
+		vertical-align: top;
+	}
+}
+.authorInfo {
+	position: absolute;
+	bottom: -9px;
+	left: 5px;
+	p {
+		width: 142px;
+		height: 36px;
+		padding: 0 0 0 60px;
+		line-height: 36px;		
+		background:#D1F465;
+		color: #185C0B;
+		font-size: 16px;
+		@include box-sizing(border-box);	
+		@include border-radius(36px);
+	}
+}
+.babyPhoto {
+	position: absolute;
+	top: -7px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #FFF;
+	@include box-sizing(border-box);	
+	@include border-radius(50px);
+	overflow: hidden;
+	img {
+		width: 46px;					
+	}
+}
+
+.dialyContent {
+	margin-top: 18px;
+	color: #2A887A;
+	font-size: 14px;
+	padding: 0 12px 10px;
+	line-height: 24px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.oprateArea {
+	padding:6px 12px;
+	@include clearfix;	
+}
+.audioArea {
+	float: left;
+	height: 36px;
+	padding: 0 8px;
+	border: 1px solid #57D9CE;
+	@include border-radius(36px);
+	@include box-sizing(border-box);		
+}
+.contrlBtn {
+	@include inline-block;
+	outline: none;
+	width: 26px;
+	height: 34px;
+	border: none;
+	padding: 0;	
+	background: url(../img/ic_palyStart.png) no-repeat center;
+	background-size: 11px 16px;
+}
+.contrlBtn--pause {
+	background: url(../img/ic_palyPause.png) no-repeat center;
+	background-size: 10px 16px;
+}
+.countTime {
+	@include inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 6px 0 10px;
+	color: #555;
+	font-size: 14px;
+	border-left: 1px solid #DADADA;
+	font-weight: 700;
+}
+.priase {
+	float: right;
+	height: 36px;
+	line-height: 36px;
+	color: #555;
+	font-size: 14px;
+	font-weight: 700;
+	&::before {
+		content: "";
+		display: inline-block;
+		vertical-align: sub;
+		width: 21px;
+		height: 21px;
+		margin-right: 5px;
+		background: url(../img/ic_praise.png) no-repeat 0;
+		background-size: 21px 21px;
+	}
+}

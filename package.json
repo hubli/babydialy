@@ -1,0 +1,16 @@
+{
+  "name": "babydialy",
+  "version": "1.0.0", 
+  "description": "baby dialy project to mobile webapp",
+  "devDependencies": {
+     "gulp": "^3.8.10",
+     "gulp-compass": "",
+     "gulp-minify-css": "",
+     "gulp-jshint": "",
+     "gulp-concat": "",
+     "gulp-uglify": "",
+     "gulp-imagemin": "",
+     "gulp-sourcemaps": "",
+     "del": ""
+  }
+}

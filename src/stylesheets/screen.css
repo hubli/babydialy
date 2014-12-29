@@ -1,0 +1,236 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+  background: #EBF8F7;
+}
+
+.titleBar {
+  position: relative;
+  height: 45px;
+  background: url(../img/bg_title.png) repeat-x 0 bottom;
+  background-size: 10px 45px;
+}
+.titleBar a {
+  position: absolute;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background: url(../img/ic_backup.png) no-repeat center;
+  background-size: 21px 21px;
+}
+.titleBar h1 {
+  font-size: 18px;
+  color: #FFF;
+  text-align: center;
+  line-height: 45px;
+}
+
+main {
+  padding-top: 12px;
+}
+
+.content {
+  margin: 0 12px 12px;
+  background: #FFF;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.mainContent {
+  position: relative;
+}
+
+.contentImg {
+  overflow: hidden;
+}
+.contentImg img {
+  width: 100%;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+
+.authorInfo {
+  position: absolute;
+  bottom: -9px;
+  left: 5px;
+}
+.authorInfo p {
+  width: 142px;
+  height: 36px;
+  padding: 0 0 0 60px;
+  line-height: 36px;
+  background: #D1F465;
+  color: #185C0B;
+  font-size: 16px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 36px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+}
+
+.babyPhoto {
+  position: absolute;
+  top: -7px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FFF;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.babyPhoto img {
+  width: 46px;
+}
+
+.dialyContent {
+  margin-top: 18px;
+  color: #2A887A;
+  font-size: 14px;
+  padding: 0 12px 10px;
+  line-height: 24px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.oprateArea {
+  padding: 6px 12px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.audioArea {
+  float: left;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #57D9CE;
+  -moz-border-radius: 36px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contrlBtn {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  outline: none;
+  width: 26px;
+  height: 34px;
+  border: none;
+  padding: 0;
+  background: url(../img/ic_palyStart.png) no-repeat center;
+  background-size: 11px 16px;
+}
+
+.contrlBtn--pause {
+  background: url(../img/ic_palyPause.png) no-repeat center;
+  background-size: 10px 16px;
+}
+
+.countTime {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px 0 10px;
+  color: #555;
+  font-size: 14px;
+  border-left: 1px solid #DADADA;
+  font-weight: 700;
+}
+
+.priase {
+  float: right;
+  height: 36px;
+  line-height: 36px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 700;
+}
+.priase::before {
+  content: "";
+  display: inline-block;
+  vertical-align: sub;
+  width: 21px;
+  height: 21px;
+  margin-right: 5px;
+  background: url(../img/ic_praise.png) no-repeat 0;
+  background-size: 21px 21px;
+}
